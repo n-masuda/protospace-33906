@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
-  before_action :authenticate_user!, expect:[:new, :edit, :destroy]
+  before_action :authenticate_user!, only:[:new, :edit, :destroy]
 
 
   def index
